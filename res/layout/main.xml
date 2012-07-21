@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="Задача:"/>
+    <EditText
+            android:id="@+id/task"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"/>
+    <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="Комментарий:"/>
+    <EditText
+            android:id="@+id/comm"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"/>
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+            >
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:text="Дата"
+            android:padding="10dip"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/time"
+                android:text="Время"
+                android:padding="10dip"/>  </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+            >
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact"
+                android:text="Контакт"
+                android:padding="10dip"/>
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="Здесь контакт"/>  </LinearLayout>
+        <Spinner
+                android:id="@+id/status"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"/>
+    <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/add"
+                android:text="add"
+                android:padding="10dip"/>
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/read"
+            android:text="read"
+            android:padding="10dip"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/text"/>
+
+</LinearLayout>
+
