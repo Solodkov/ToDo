@@ -11,7 +11,8 @@
     <EditText
             android:id="@+id/task"
             android:layout_height="wrap_content"
-            android:layout_width="fill_parent"/>
+            android:layout_width="fill_parent"
+            android:text=" "/>
     <TextView
             android:layout_height="wrap_content"
             android:layout_width="fill_parent"
@@ -19,7 +20,17 @@
     <EditText
             android:id="@+id/comm"
             android:layout_height="wrap_content"
-            android:layout_width="fill_parent"/>
+            android:layout_width="fill_parent"
+            android:text=" "/>
+    <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="Место:"/>
+    <EditText
+            android:id="@+id/place"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text=" "/>
     <LinearLayout android:orientation="horizontal"
                   android:layout_width="fill_parent"
                   android:layout_height="wrap_content"

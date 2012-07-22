@@ -14,14 +14,19 @@ import android.widget.*;
 
 import java.util.Calendar;
 
-public class MyActivity extends Activity{
+public class MyActivity extends Activity implements AdapterView.OnItemSelectedListener{
 
 
     Button add, read, date, contact, time;
     TextView textView;
-    EditText task, comm;
-    DatePicker picker;
+    EditText task, comm, place;
+    Spinner spinner;
     Calendar calendar = Calendar.getInstance();
+
+    int calendarNum=0;   //Номер выбранного календаря (тип задания), для создания задания
+
+    String[] items = { "Работа", "Встреча", "Мероприятие", "Покупка"};
+
 
     /** Called when the activity is first created. */
     @Override
@@ -46,17 +51,19 @@ public class MyActivity extends Activity{
         time.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new TimePickerDialog(MyActivity.this, timeSetListener, calendar.get(Calendar.HOUR_OF_DAY), calendar.get(Calendar.MINUTE), true).show();}
+                new TimePickerDialog(MyActivity.this, timeSetListener,
+                        calendar.get(Calendar.HOUR_OF_DAY), calendar.get(Calendar.MINUTE), true).show();}
         });
+
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 String task_ = task.getText().toString();
                 String comm_ = comm.getText().toString();
+                String place_ = place.getText().toString();
                 long date=calendar.getTimeInMillis();
                 Long num;
-                num = pushAppointmentsToCalender(context,task_,comm_,"Home",0,date,false,false);
+                num = pushAppointmentsToCalender(context,task_,comm_,place_,calendarNum, 0,date,false,false);
                 textView.setText(num.toString());
             }
         });
@@ -85,12 +92,19 @@ public class MyActivity extends Activity{
 
         task = (EditText) findViewById(R.id.task);
         comm = (EditText) findViewById(R.id.comm);
+        place = (EditText) findViewById(R.id.place);
 
         textView = (TextView) findViewById(R.id.text);
+
+        spinner = (Spinner) findViewById(R.id.status);
+
+        ArrayAdapter aa = new ArrayAdapter(this, android.R.layout.simple_spinner_item, items);
+        aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(aa);
     }
     //******************************************************************************************************************
 
-    //**********************Инициализация диалога выбора даты***********************************************************
+    //**********************Инициализация диалога выбора даты...********************************************************
     private DatePickerDialog.OnDateSetListener dateSetListener = new DatePickerDialog.OnDateSetListener() {
         @Override
         public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {
@@ -99,7 +113,7 @@ public class MyActivity extends Activity{
             calendar.set(Calendar.DAY_OF_MONTH, i2);
         }
     };
-    //******************************************************************************************************************
+    //*************************************...и времени*****************************************************************
 
     //******************************************************************************************************************
     private TimePickerDialog.OnTimeSetListener timeSetListener = new TimePickerDialog.OnTimeSetListener() {
@@ -109,6 +123,17 @@ public class MyActivity extends Activity{
             calendar.set(Calendar.MINUTE, minute);
         }
     };
+    //******************************************************************************************************************
+
+    //**********************************Реализация обработчиков действий спиннера*************************************************************
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
+        calendarNum = position;
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
+    }
     //******************************************************************************************************************
 
 
@@ -133,13 +158,15 @@ public class MyActivity extends Activity{
         }
     }
 
-    public static long pushAppointmentsToCalender(Context curActivity, String title, String addInfo, String place, int status, long startDate, boolean needReminder, boolean needMailService) {
+    public static long pushAppointmentsToCalender(Context curActivity, String title, String addInfo, String place, int calendarNum, int status, long startDate, boolean needReminder, boolean needMailService) {
         /***************** Event: note(without alert) *******************/
 
         String eventUriString = "content://com.android.calendar/events";
         ContentValues eventValues = new ContentValues();
 
-        eventValues.put("calendar_id", 1); // id, We need to choose from
+        eventValues.put("calendar_id", calendarNum ); // id, We need to choose from
+
+
         // our mobile for primary
         // its 1
         eventValues.put("title", title);
@@ -223,4 +250,6 @@ public class MyActivity extends Activity{
         }
         return eventID;
     }
+
+
 }

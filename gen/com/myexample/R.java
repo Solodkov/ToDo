@@ -14,15 +14,16 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int add=0x7f050006;
+        public static final int add=0x7f050007;
         public static final int comm=0x7f050001;
-        public static final int contact=0x7f050004;
-        public static final int date=0x7f050002;
-        public static final int read=0x7f050007;
-        public static final int status=0x7f050005;
+        public static final int contact=0x7f050005;
+        public static final int date=0x7f050003;
+        public static final int place=0x7f050002;
+        public static final int read=0x7f050008;
+        public static final int status=0x7f050006;
         public static final int task=0x7f050000;
-        public static final int text=0x7f050008;
-        public static final int time=0x7f050003;
+        public static final int text=0x7f050009;
+        public static final int time=0x7f050004;
     }
     public static final class layout {
         public static final int main=0x7f030000;
