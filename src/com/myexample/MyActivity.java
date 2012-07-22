@@ -8,32 +8,27 @@ import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.CalendarContract;
 import android.util.Log;
 import android.view.View;
 import android.widget.*;
 
 import java.util.Calendar;
 
-public class MyActivity extends Activity implements AdapterView.OnItemSelectedListener{
+public class MyActivity extends Activity {
 
 
     Button add, read, date, contact, time;
     TextView textView;
     EditText task, comm, place;
-    Spinner spinner;
     Calendar calendar = Calendar.getInstance();
 
-    int calendarNum=0;   //Номер выбранного календаря (тип задания), для создания задания
-
-    String[] items = { "Работа", "Встреча", "Мероприятие", "Покупка"};
-
-
-    /** Called when the activity is first created. */
+   /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.adding);
 
         initViews();    //Инициализация всех элементов Активити
         final Context context = getApplicationContext();
@@ -63,18 +58,16 @@ public class MyActivity extends Activity implements AdapterView.OnItemSelectedLi
                 String place_ = place.getText().toString();
                 long date=calendar.getTimeInMillis();
                 Long num;
-                num = pushAppointmentsToCalender(context,task_,comm_,place_,calendarNum, 0,date,false,false);
+                num = pushAppointmentsToCalender(context,task_,comm_,place_, 0,date,false,false);
                 textView.setText(num.toString());
+                Log.e("INFO :", num.toString());
             }
         });
 
         read.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String uriString = "content://com.android.calendar/calendars";
-                Log.i("INFO", "Reading content from " + uriString);
-                readContent(uriString, context);
-                uriString = "content://com.android.calendar/events";
+                String uriString = "content://com.android.calendar/events";
                 Log.i("INFO", "Reading content from " + uriString);
                 readContent(uriString, context);
             }
@@ -95,12 +88,6 @@ public class MyActivity extends Activity implements AdapterView.OnItemSelectedLi
         place = (EditText) findViewById(R.id.place);
 
         textView = (TextView) findViewById(R.id.text);
-
-        spinner = (Spinner) findViewById(R.id.status);
-
-        ArrayAdapter aa = new ArrayAdapter(this, android.R.layout.simple_spinner_item, items);
-        aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(aa);
     }
     //******************************************************************************************************************
 
@@ -125,58 +112,57 @@ public class MyActivity extends Activity implements AdapterView.OnItemSelectedLi
     };
     //******************************************************************************************************************
 
-    //**********************************Реализация обработчиков действий спиннера*************************************************************
-    @Override
-    public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
-        calendarNum = position;
-    }
-
-    @Override
-    public void onNothingSelected(AdapterView<?> adapterView) {
-    }
-    //******************************************************************************************************************
-
-
     private void readContent(String uriString, Context mContext) {
         Uri uri = Uri.parse(uriString);
-        Cursor cursor = mContext.getContentResolver().query(uri, null, null,
-                null, null);
+        Cursor cursor = mContext.getContentResolver().query(uri, null, null, null, null);
         if (cursor != null && cursor.getCount() > 0) {
             cursor.moveToFirst();
             String columnNames[] = cursor.getColumnNames();
             String value = "";
             String colNamesString = "";
-            do {
+            if ( cursor.moveToFirst() ) {
+                final String[] calNames = new String[cursor.getCount()];
+                final int[] calIds = new int[cursor.getCount()];
+              /*  for (int i = 0; i < calNames.length; i++) {
+                    calIds[i] = cursor.getInt(0);
+                    calNames[i] = cursor.getString(1);
+                    Log.e("INFO", "info: " + calIds[i] + " " + calNames[i]);
+                    cursor.moveToNext();
+                }  */
+
+
+           do {
                 value = "";
-                for (String colName : columnNames) {
+                for (int i=0;i<columnNames.length;i++){
+                Log.e(" INFO: ", columnNames[i] + " :"+ i);
+                }
+               /* for (String colName : columnNames) {
                     value += colName + " = ";
                     value += cursor.getString(cursor.getColumnIndex(colName))
                             + " ||";
-                }
-                Log.e("INFO : ", value);
-            } while (cursor.moveToNext());
+                } */
+              //  Log.e("INFO : ", value);
+            } while (cursor.moveToNext());    }
         }
     }
 
-    public static long pushAppointmentsToCalender(Context curActivity, String title, String addInfo, String place, int calendarNum, int status, long startDate, boolean needReminder, boolean needMailService) {
+
+    public static long pushAppointmentsToCalender(Context curActivity, String title, String addInfo, String place, int status, long startDate, boolean needReminder, boolean needMailService) {
         /***************** Event: note(without alert) *******************/
 
         String eventUriString = "content://com.android.calendar/events";
         ContentValues eventValues = new ContentValues();
 
-        eventValues.put("calendar_id", calendarNum ); // id, We need to choose from
-
-
+        eventValues.put("calendar_id", 1); // id, We need to choose from
         // our mobile for primary
         // its 1
         eventValues.put("title", title);
         eventValues.put("description", addInfo);
         eventValues.put("eventLocation", place);
 
-        long endDate = startDate; // For next 1hr
-
         eventValues.put("dtstart", startDate);
-        eventValues.put("dtend", endDate);
+        eventValues.put("dtend", startDate);
+        eventValues.put(CalendarContract.Events.EVENT_TIMEZONE,"Russia/Moscow");
 
         // values.put("allDay", 1); //If it is bithday alarm or such
         // kind (which should remind me for whole day) 0 for false, 1
@@ -186,10 +172,10 @@ public class MyActivity extends Activity implements AdapterView.OnItemSelectedLi
         // entries tentative (0),
         // confirmed (1) or canceled
         // (2):
-        eventValues.put("visibility", 3); // visibility to default (0),
+      //eventValues.put("visibility", 3); // visibility to default (0),
         // confidential (1), private
         // (2), or public (3):
-        eventValues.put("transparency", 0); // You can control whether
+      //eventValues.put("transparency", 0); // You can control whether
         // an event consumes time
         // opaque (0) or transparent
         // (1).
@@ -250,6 +236,4 @@ public class MyActivity extends Activity implements AdapterView.OnItemSelectedLi
         }
         return eventID;
     }
-
-
 }
