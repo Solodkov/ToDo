@@ -8,7 +8,6 @@
         <option name="nightMode" value="notnight" />
         <option name="targetHashString" value="android-10" />
         <option name="theme" value="Theme" />
-        <option name="visible" value="false" />
       </GlobalState>
     </option>
   </component>
@@ -76,11 +75,11 @@
       <file leaf-file-name="MyActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/myexample/MyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="74" selection-start="2539" selection-end="2578" vertical-scroll-proportion="0.0">
+            <state line="70" column="12" selection-start="2698" selection-end="2698" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2408#2720#0" expanded="true" />
-                <element signature="e#2709#2710#0" expanded="true" />
+                <element signature="e#1831#2709#0" expanded="true" />
+                <element signature="e#2745#3264#0" expanded="true" />
+                <element signature="e#3253#3254#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,7 +88,7 @@
       <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="41" selection-start="1102" selection-end="1102" vertical-scroll-proportion="0.0">
+            <state line="15" column="34" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -98,24 +97,17 @@
       <file leaf-file-name="listitem.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/listitem.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="39" selection-start="957" selection-end="957" vertical-scroll-proportion="0.0">
+            <state line="27" column="35" selection-start="981" selection-end="981" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/myexample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="5" selection-start="1301" selection-end="1301" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#461#470#0" expanded="true" />
-                <element signature="e#514#523#0" expanded="true" />
-                <element signature="e#566#575#0" expanded="true" />
-                <element signature="e#1374#1619#0" expanded="true" />
-                <element signature="e#1608#1609#0" expanded="true" />
-              </folding>
+            <state line="95" column="5" selection-start="3107" selection-end="3107" vertical-scroll-proportion="0.8037825">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -123,7 +115,7 @@
       <file leaf-file-name="MyEvent.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/myexample/MyEvent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="30" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0">
+            <state line="25" column="53" selection-start="481" selection-end="481" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -131,13 +123,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EventAdapter.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="EventAdapter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/myexample/EventAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="48" selection-start="1543" selection-end="1543" vertical-scroll-proportion="1.183844">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="48" column="0" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -145,7 +135,7 @@
       <file leaf-file-name="adding.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/adding.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="59" selection-start="2447" selection-end="2447" vertical-scroll-proportion="0.0">
+            <state line="32" column="26" selection-start="1199" selection-end="1199" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -173,14 +163,14 @@
         <option value="$PROJECT_DIR$/res/layout/picker.xml" />
         <option value="$PROJECT_DIR$/res/values/calendars.xml" />
         <option value="$PROJECT_DIR$/res/layout/new.xml" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/myexample/MyEvent.java" />
+        <option value="$PROJECT_DIR$/src/com/myexample/EventAdapter.java" />
         <option value="$PROJECT_DIR$/res/layout/adding.xml" />
+        <option value="$PROJECT_DIR$/res/layout/listitem.xml" />
         <option value="$PROJECT_DIR$/src/com/myexample/MyActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/res/layout/listitem.xml" />
-        <option value="$PROJECT_DIR$/src/com/myexample/MyEvent.java" />
         <option value="$PROJECT_DIR$/src/com/myexample/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/myexample/EventAdapter.java" />
       </list>
     </option>
   </component>
@@ -216,34 +206,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyCalendar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyCalendar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -336,6 +298,34 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyCalendar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyCalendar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -353,8 +343,8 @@
     <property name="AndroidTargetDevices" value="20080411" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Android Application.MyCalendar">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -402,24 +392,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -445,6 +417,24 @@
       <envs />
       <properties />
       <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -571,7 +561,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -584,13 +574,13 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.49126804" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33904108" sideWeight="0.49126804" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33904108" sideWeight="0.49126804" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24221715" sideWeight="0.6609589" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22945206" sideWeight="0.4791192" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24221715" sideWeight="0.7705479" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22945206" sideWeight="0.4791192" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -673,88 +663,73 @@
         <state line="24" column="4" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.030520646" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="41" selection-start="1102" selection-end="1102" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/Android SDK/platforms/android-16/android.jar!/android/database/AbstractWindowedCursor.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="28" selection-start="451" selection-end="451" vertical-scroll-proportion="0.13661203">
-          <folding />
-        </state>
+        <state line="12" column="28" selection-start="451" selection-end="451" vertical-scroll-proportion="0.13661203" />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/Android SDK/platforms/android-16/android.jar!/android/database/CursorWrapper.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="28" selection-start="1570" selection-end="1570" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/adding.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="59" selection-start="2447" selection-end="2447" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myexample/MyActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="74" selection-start="2539" selection-end="2578" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2408#2720#0" expanded="true" />
-            <element signature="e#2709#2710#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="43" column="28" selection-start="1570" selection-end="1570" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="22" selection-start="917" selection-end="917" vertical-scroll-proportion="0.0">
+        <state line="18" column="22" selection-start="917" selection-end="917" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/adding.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="26" selection-start="1199" selection-end="1199" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/myexample/EventAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="0" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/listitem.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="39" selection-start="957" selection-end="957" vertical-scroll-proportion="0.0">
+        <state line="27" column="35" selection-start="981" selection-end="981" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myexample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="5" selection-start="1301" selection-end="1301" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#461#470#0" expanded="true" />
-            <element signature="e#514#523#0" expanded="true" />
-            <element signature="e#566#575#0" expanded="true" />
-            <element signature="e#1374#1619#0" expanded="true" />
-            <element signature="e#1608#1609#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/myexample/MyEvent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="30" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0">
+        <state line="25" column="53" selection-start="481" selection-end="481" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myexample/EventAdapter.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="48" selection-start="1543" selection-end="1543" vertical-scroll-proportion="1.183844">
+        <state line="15" column="34" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/myexample/MyActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="12" selection-start="2698" selection-end="2698" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1831#2709#0" expanded="true" />
+            <element signature="e#2745#3264#0" expanded="true" />
+            <element signature="e#3253#3254#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/myexample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="5" selection-start="3107" selection-end="3107" vertical-scroll-proportion="0.8037825">
+          <folding />
         </state>
       </provider>
     </entry>

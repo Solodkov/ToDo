@@ -3,7 +3,7 @@
 <!--suppress AndroidLintAdapterViewChildren -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
+              android:layout_height="match_parent"
               android:orientation="vertical">
     <LinearLayout android:orientation="horizontal"
                   android:layout_width="fill_parent"
@@ -13,7 +13,8 @@
             android:layout_height="wrap_content"
             android:layout_width="fill_parent"
             android:layout_weight="0.3"
-            android:id="@+id/curTime"/>
+            android:gravity="right"
+            android:id="@+id/curDate"/>
         <Button
             android:layout_weight="0.3"
             android:layout_width="fill_parent"
@@ -30,13 +31,26 @@
 
     <ListView
         android:id="@+id/lvTop"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_width="fill_parent">
     </ListView>
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+            >
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_weight="4"/>
+    <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/curTime"/> </LinearLayout>
 
     <ListView
             android:id="@+id/lvBottom"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_width="fill_parent">
     </ListView>
 

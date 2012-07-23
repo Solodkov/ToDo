@@ -21,6 +21,7 @@ public class EventAdapter extends ArrayAdapter<MyEvent> {
         this.context= context;
         this.layoutResourceId = layoutResourceId;
         this.data = data;
+
     }
 
     @Override
@@ -45,7 +46,9 @@ public class EventAdapter extends ArrayAdapter<MyEvent> {
         MyEvent myEvent = data.get(position);
         holder.task.setText(myEvent.task);
         holder.comm.setText(myEvent.comment);
+
         holder.time.setText(myEvent.getStringTime());
+
         return row;
     }
 

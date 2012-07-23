@@ -5,6 +5,7 @@ import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
@@ -54,13 +55,19 @@ public class MyActivity extends Activity {
             @Override
             public void onClick(View view) {
                 String task_ = task.getText().toString();
-                String comm_ = comm.getText().toString();
-                String place_ = place.getText().toString();
-                long date=calendar.getTimeInMillis();
-                Long num;
-                num = pushAppointmentsToCalender(context,task_,comm_,place_, 0,date,false,false);
-                textView.setText(num.toString());
-                Log.e("INFO :", num.toString());
+                if (!task_.equals("")){
+                    String comm_ = comm.getText().toString();
+                    String place_ = place.getText().toString();
+                    long date=calendar.getTimeInMillis();
+                    Long num;
+                    num = pushAppointmentsToCalender(context,task_,comm_,place_, 0,date,false,false);
+                    textView.setText(num.toString());
+                }
+                else {
+                    Toast.makeText(getApplicationContext(),"Enter task title please",Toast.LENGTH_SHORT).show();
+                }
+                Intent intent = new Intent(getApplicationContext(),Main.class);
+                startActivity(intent);
             }
         });
 
@@ -69,7 +76,11 @@ public class MyActivity extends Activity {
             public void onClick(View view) {
                 String uriString = "content://com.android.calendar/events";
                 Log.i("INFO", "Reading content from " + uriString);
-                readContent(uriString, context);
+                //readContent(uriString, context);
+                String task_ = task.getText().toString();
+                if (task.getText().toString().equals("")){Log.e("INFO :", "FFFFF");}
+                Log.e("INFO :", "1" + task.getText() + "1");
+
             }
         });
         //**************************************************************************************************************
@@ -123,25 +134,11 @@ public class MyActivity extends Activity {
             if ( cursor.moveToFirst() ) {
                 final String[] calNames = new String[cursor.getCount()];
                 final int[] calIds = new int[cursor.getCount()];
-              /*  for (int i = 0; i < calNames.length; i++) {
-                    calIds[i] = cursor.getInt(0);
-                    calNames[i] = cursor.getString(1);
-                    Log.e("INFO", "info: " + calIds[i] + " " + calNames[i]);
-                    cursor.moveToNext();
-                }  */
-
-
-           do {
+            do {
                 value = "";
                 for (int i=0;i<columnNames.length;i++){
                 Log.e(" INFO: ", columnNames[i] + " :"+ i);
                 }
-               /* for (String colName : columnNames) {
-                    value += colName + " = ";
-                    value += cursor.getString(cursor.getColumnIndex(colName))
-                            + " ||";
-                } */
-              //  Log.e("INFO : ", value);
             } while (cursor.moveToNext());    }
         }
     }

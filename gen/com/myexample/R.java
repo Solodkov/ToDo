@@ -20,9 +20,10 @@ public final class R {
         public static final int comm=0x7f050001;
         public static final int comm_lv=0x7f05000a;
         public static final int contact=0x7f050005;
-        public static final int curTime=0x7f05000c;
+        public static final int curDate=0x7f05000c;
+        public static final int curTime=0x7f050010;
         public static final int date=0x7f050003;
-        public static final int lvBottom=0x7f050010;
+        public static final int lvBottom=0x7f050011;
         public static final int lvTop=0x7f05000f;
         public static final int place=0x7f050002;
         public static final int read=0x7f050007;

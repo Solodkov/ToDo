@@ -33,8 +33,14 @@ public class MyEvent {
 class EventCompare implements Comparator<MyEvent>{
     @Override
     public int compare(MyEvent myEvent, MyEvent myEvent1) {
-        int diff;
-        diff = (int) ((int) myEvent.getTime() - myEvent1.getTime());
-        return diff;
+        long result = myEvent.getTime() - myEvent1.getTime();
+
+        if (result > 0) {
+            return 1;
+        } else if (result < 0) {
+            return -1;
+        } else {
+            return 0;
+        }
     }
 }
