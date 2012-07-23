@@ -75,11 +75,12 @@
       <file leaf-file-name="MyActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/myexample/MyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="12" selection-start="2698" selection-end="2698" vertical-scroll-proportion="0.0">
+            <state line="69" column="17" selection-start="2693" selection-end="2693" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#1831#2709#0" expanded="true" />
-                <element signature="e#2745#3264#0" expanded="true" />
-                <element signature="e#3253#3254#0" expanded="true" />
+                <element signature="e#1831#2717#0" expanded="true" />
+                <element signature="e#2706#2707#0" expanded="true" />
+                <element signature="e#2753#3272#0" expanded="true" />
+                <element signature="e#3261#3262#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,19 +104,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/myexample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="5" selection-start="3107" selection-end="3107" vertical-scroll-proportion="0.8037825">
+            <state line="95" column="5" selection-start="3107" selection-end="3107" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyEvent.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MyEvent.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/myexample/MyEvent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="53" selection-start="481" selection-end="481" vertical-scroll-proportion="0.0">
+            <state line="41" column="69" selection-start="1120" selection-end="1120" vertical-scroll-proportion="0.68321514">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -144,7 +145,7 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="22" selection-start="917" selection-end="917" vertical-scroll-proportion="0.0">
+            <state line="5" column="13" selection-start="212" selection-end="263" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -163,14 +164,14 @@
         <option value="$PROJECT_DIR$/res/layout/picker.xml" />
         <option value="$PROJECT_DIR$/res/values/calendars.xml" />
         <option value="$PROJECT_DIR$/res/layout/new.xml" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/com/myexample/MyEvent.java" />
         <option value="$PROJECT_DIR$/src/com/myexample/EventAdapter.java" />
         <option value="$PROJECT_DIR$/res/layout/adding.xml" />
         <option value="$PROJECT_DIR$/res/layout/listitem.xml" />
-        <option value="$PROJECT_DIR$/src/com/myexample/MyActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/src/com/myexample/Main.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/myexample/MyActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/myexample/MyEvent.java" />
       </list>
     </option>
   </component>
@@ -673,21 +674,9 @@
         <state line="43" column="28" selection-start="1570" selection-end="1570" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="22" selection-start="917" selection-end="917" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/adding.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="26" selection-start="1199" selection-end="1199" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myexample/EventAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -699,15 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myexample/MyEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="53" selection-start="481" selection-end="481" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="34" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0">
@@ -715,21 +695,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/myexample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="5" selection-start="3107" selection-end="3107" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="212" selection-end="263" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/myexample/MyActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="12" selection-start="2698" selection-end="2698" vertical-scroll-proportion="0.0">
+        <state line="69" column="17" selection-start="2693" selection-end="2693" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#1831#2709#0" expanded="true" />
-            <element signature="e#2745#3264#0" expanded="true" />
-            <element signature="e#3253#3254#0" expanded="true" />
+            <element signature="e#1831#2717#0" expanded="true" />
+            <element signature="e#2706#2707#0" expanded="true" />
+            <element signature="e#2753#3272#0" expanded="true" />
+            <element signature="e#3261#3262#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myexample/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/myexample/EventAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="5" selection-start="3107" selection-end="3107" vertical-scroll-proportion="0.8037825">
+        <state line="48" column="0" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/myexample/MyEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="69" selection-start="1120" selection-end="1120" vertical-scroll-proportion="0.68321514">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

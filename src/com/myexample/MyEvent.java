@@ -26,7 +26,21 @@ public class MyEvent {
     public String getStringTime(){
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(time);
-        return calendar.get(Calendar.HOUR_OF_DAY) + ":" + calendar.get(Calendar.MINUTE);
+        StringBuilder stringBuilder = new StringBuilder();
+
+        if (calendar.get(Calendar.HOUR_OF_DAY)<10){
+            stringBuilder.append("0").append(calendar.get(Calendar.HOUR_OF_DAY)).append(":");
+        }
+        else {
+            stringBuilder.append(calendar.get(Calendar.HOUR_OF_DAY)).append(":");
+        }
+        if (calendar.get(Calendar.MINUTE)<10){
+            stringBuilder.append("0").append(calendar.get(Calendar.MINUTE));
+        }
+        else {
+            stringBuilder.append(calendar.get(Calendar.MINUTE));
+        }
+        return stringBuilder.toString();
     }
 }
 

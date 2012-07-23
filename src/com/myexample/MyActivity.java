@@ -62,12 +62,12 @@ public class MyActivity extends Activity {
                     Long num;
                     num = pushAppointmentsToCalender(context,task_,comm_,place_, 0,date,false,false);
                     textView.setText(num.toString());
+                    Intent intent = new Intent(getApplicationContext(),Main.class);
+                    startActivity(intent);
                 }
                 else {
                     Toast.makeText(getApplicationContext(),"Enter task title please",Toast.LENGTH_SHORT).show();
                 }
-                Intent intent = new Intent(getApplicationContext(),Main.class);
-                startActivity(intent);
             }
         });
 
